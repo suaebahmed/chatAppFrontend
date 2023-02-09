@@ -78,7 +78,7 @@ function SideDrawer() {
       };
 
       const { data } = await axios.get(
-        `https://chatappassignment.onrender.com/api/user?search=${search}`,
+        `/api/user?search=${search}`,
         config
       );
       console.log("search data", data);
@@ -110,7 +110,7 @@ function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        `https://chatappassignment.onrender.com/api/chat`,
+        `/api/chat`,
         { userId },
         config
       );
